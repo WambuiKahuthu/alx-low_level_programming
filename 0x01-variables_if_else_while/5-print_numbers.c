@@ -5,7 +5,7 @@
  *
  * Return: successful exit is 0
  */
- 
+
 int main(void)
 {
 	int n;
