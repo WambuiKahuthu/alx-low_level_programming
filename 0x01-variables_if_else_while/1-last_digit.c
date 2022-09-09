@@ -10,13 +10,11 @@
 
 int main(void)
 {
-	int n;
+	int n, l;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* pre-written code that generates a random number*/
-
-	int l;
 
 	l = n % 10;
 	/* store last digit of random number in variable l*/
