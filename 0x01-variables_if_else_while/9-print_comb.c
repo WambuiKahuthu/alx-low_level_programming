@@ -5,7 +5,7 @@
  *
  * Return: 0 is success
  */
- 
+
 int main(void)
 {
 	int n;
@@ -17,7 +17,7 @@ int main(void)
 
 			putchar(',');
 			putchar(' ');
- 
+
 	putchar('\n');
 	return (0);
 }
