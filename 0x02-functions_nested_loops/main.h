@@ -13,4 +13,5 @@ int _isalpha(int i);
 
 int print_sign(int n);
 
+int _abs(int);
 #endif
