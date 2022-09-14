@@ -8,23 +8,22 @@
 
 int main(void)
 {
-	unsigned long n1 = 0, n2 = 1, sum, total;
-	float total_sum;
+	long int n1, n2, sum, total_sum;
 
-	while (1)
+	n1 = 1;
+	n2 = 2;
+	sum = total_sum = 0;
+
+	while (sum <= 4000000)
 	{
 		sum = n1 + n2;
-
-		if (sum > 4000000)
-			break;
-
-		if ((sum % 2) == 0)
-			total += sum;
-
 		n1 = n2;
 		n2 = sum;
+		if ((n1 % 2) == 0)
+		{
+			total_sum += n1;
+		}
 	}
-	printf("%.0f\n", total);
-
+	printf("%ld\n", total_sum);
 	return (0);
 }
