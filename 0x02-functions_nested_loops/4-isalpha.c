@@ -1,7 +1,7 @@
 # include "main.h"
 
 /**
- * _islower - checks if a character is alphabetic
+ * _isalpha - checks if a character is alphabetic
  *
  * @i: character
  *
