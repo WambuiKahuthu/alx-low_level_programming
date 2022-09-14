@@ -8,12 +8,12 @@
 
 int main(void)
 {
-	char str[]= " _putchar";
+	char str[] = "_putchar";
 	int count, size;
 
 	size = sizeof(str) / sizeof(char);
 
-	for(count = 0; count < size; count++)
+	for (count = 0; count < size; count++)
 		_putchar(str[count]);
 
 	_putchar('\n');
