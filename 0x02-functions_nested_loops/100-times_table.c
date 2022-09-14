@@ -3,7 +3,7 @@
 /**
  * print_times_table - prints the n times table, starting with 0
  *
- * @n: number 
+ * @n: number
  *
  * Return: void
  */
