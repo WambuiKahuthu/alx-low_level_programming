@@ -5,12 +5,12 @@
  *
  * @c: character
  *
- * Return: 1 if uppercase, 0 if not
+ * Return: 1 if upperrcase, 0 if not
  */
 
-int _isupper(int c)
+int _islower(int c)
 {
-	if (i >= 65 && i <= 90)
+	if (c >= 97 && c <= 122)
 		return (1);
 	else
 		return (0);
