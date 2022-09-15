@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * print_more_numbers - prints the 0 - 14, 10 times
+ * more_numbers - prints the 0 - 14, 10 times
  *
  * Return: 0
  */
 
-void print_more_numbers(void)
+void more_numbers(void)
 {
 	int x, ch;
 
@@ -14,7 +14,7 @@ void print_more_numbers(void)
 	{
 		for (ch = 0; ch <= 14; ch++)
 		{
-			if (ch >= 10)
+			if (ch > 9)
 				_putchar((ch / 10) + '0');
 			_putchar((ch % 10) + '0');
 		}
