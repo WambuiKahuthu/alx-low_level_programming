@@ -4,20 +4,23 @@
 
 /**
  * main - entry point
- * 
+ *
  * Return: 0
  */
 
 int main(void)
 {
-	srand(time(NULL));
+	int sum;
+	char c;
 
-	int index;
-	
-	char characters[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789/,.-+=~`<>:";
-	for(index = 0; index < 12; index++)
+	srand(time(NULL));
+	while (sum <= 2645)
 	{
-		printf("%c", characters[rand() % (sizeof characters - 1)]);
+		c = rand() % 128;
+		sum += c;
+		putchar(c);
 	}
-  return (0);
+	putchar(2772 - sum);
+
+	return (0);
 }
