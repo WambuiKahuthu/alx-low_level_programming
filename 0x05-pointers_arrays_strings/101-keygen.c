@@ -10,17 +10,14 @@
 
 int main(void)
 {
-	int sum;
-	char c;
+	srand((unsigned int)(time(NULL)));
 
-	srand(time(NULL));
-	while (sum <= 2645)
+	int index;
+	
+	char characters[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789/,.-+=~`<>:";
+	
+	for(index = 0; index < 12; index++)
 	{
-		c = rand() % 128;
-		sum += c;
-		putchar(c);
+		printf("%c", characters[rand() % (sizeof characters - 1)]);
 	}
-	putchar(2772 - sum);
-
-	return (0);
 }
