@@ -1,3 +1,5 @@
+#include <unistd.h>
+
 /**
  * _putchar -prints character c to stdout
  *
