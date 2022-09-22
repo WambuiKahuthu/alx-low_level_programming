@@ -13,8 +13,8 @@ char *_strcat(char *dest, char *src)
 
 	x = 0;
 
-	while (dest[c])
-		c++;
+	while (dest[x])
+		x++;
 
 	for (y = 0; src[y] ; y++)
 
