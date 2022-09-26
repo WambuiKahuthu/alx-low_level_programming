@@ -6,7 +6,7 @@
  *
  * Return: the number of accepted bytes
  */
- unsigned int _strspn(char *s, char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
 	int i, j, f;
 
