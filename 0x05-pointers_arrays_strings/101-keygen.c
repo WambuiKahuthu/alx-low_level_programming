@@ -1,28 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#define NUM_MAX 2772
-#define NUM_MIN 64
-
-/**
- * main - generate random values up to 2772
- *
- * Return: 0 success
- */
 
 int main(void)
 {
-	int i = 0;
-	int seed = 0;
+	int myrand;
+	int count;
+	int total;
 
 	srand(time(NULL));
-
-	for (; seed <= (NUM_MAX - NUM_MIN); seed += i)
+	for (count = 0, total = 2772; total > 122; count++)
 	{
-		i = (rand() % (90 - 65) + 65);
-		putchar(i);
+		myrand = (rand() % 125) + 1;
+		printf("%c", myrand);
+		total -= myrand;
 	}
+	printf("%c", total);
 
-	printf("%c", NUM_MAX - seed);
 	return (0);
 }
