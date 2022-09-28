@@ -8,15 +8,14 @@
  */
 int square_root(int n, int sqrt)
 {
-  if (sqrt * sqrt  == n)
-	  return (sqrt);
+	if (sqrt * sqrt  == n)
+		return (sqrt);
 
-  else if (sqrt * sqrt < n)
+	else if (sqrt * sqrt < n)
+		return  (square_root(n, sqrt + 1));
 
-	  return  (square_root(n, sqrt + 1));
-
-  else
-	  return (-1);
+	else
+		return (-1);
 }
 
 /**
