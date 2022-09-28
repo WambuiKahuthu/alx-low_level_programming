@@ -20,7 +20,7 @@ return (square(n, 1));
  * Return: square root or -1
  */
 
-int square(int n, int val)
+int square(int n, int sqrt)
 {
   if (sqrt * sqrt  == n)
 	  return (sqrt);
