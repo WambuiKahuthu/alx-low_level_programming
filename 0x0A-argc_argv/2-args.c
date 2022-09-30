@@ -8,15 +8,12 @@
  *
  * Return: 0
  */
-int main(int argc, char const *argv[])
+int main(int argc, char *argv[])
 {
-	(void)char;
+	int i;
 
-	if (argc != 3)
-	{
-		printf("Error\n");
-		return (1);
-	}
-	printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
+	for (i = 0; i < argc; i++)
+		printf("%s\n", argv[i]);
+
 	return (0);
 }
