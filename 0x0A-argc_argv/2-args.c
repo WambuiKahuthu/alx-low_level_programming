@@ -8,8 +8,10 @@
  *
  * Return: 0
  */
-int main(int argc, char *argv[])
+int main(int argc, char const *argv[])
 {
+	(void)char;
+
 	if (argc != 3)
 	{
 		printf("Error\n");
