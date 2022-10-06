@@ -33,6 +33,6 @@ int main(int argc, char *argv[])
 		}
 		mul = atol(argv[1]) *  atol(argv[2]);
 	}
-	printf("%lu\n", mul);
+	_putchar('mul');
 	return (0);
 }
