@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 			if (!isdigit(argv[i][j]))
 			{
 				printf("Error\n");
-				exit (98);
+				exit(98);
 			}
 		}
 		mul = atoi(argv[1]) * atoi(argv[2]);
