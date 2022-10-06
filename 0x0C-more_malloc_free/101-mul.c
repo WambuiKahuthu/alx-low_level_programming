@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <ctype.h>
-#include "main.h"
 
 /**
  * main - multiplies two positive numbers
@@ -13,7 +12,7 @@
  */
 int main(int argc, char *argv[])
 {
-	unsigned long int mul;
+	int mul;
 	int i, j;
 
 	if (argc != 3)
@@ -32,8 +31,8 @@ int main(int argc, char *argv[])
 				exit (98);
 			}
 		}
-		mul = atol(argv[1]) *  atol(argv[2]);
+		mul = atoi(argv[1]) * atoi(argv[2]);
 	}
-	_putchar(mul + '0');
+	printf(%d\n", mul);
 	return (0);
 }
